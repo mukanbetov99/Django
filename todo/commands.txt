@@ -1,0 +1,40 @@
+python3 -m venv venv || source venv/bin/activate
+
+
+pip install Django==3.2
+pip install Djangorestframework
+
+django-admin startproject name_project(config|main) .
+dlango-admin startapp name_app
+python3 manage.py startapp name_app
+
+config.settings ----> INSATALED APPS
+#
+#
+#
+#
+#
+#
+
+ #apps 
+ 'name_apps'
+
+
+
+ name_apps.models ----> write struct subject
+
+ from djanc=go.db import models
+
+
+ class CustomClassName(models.Model):
+
+    id = default(Primery key)
+    #
+    #
+    #
+    #
+    name_field = models.TypeClass()
+
+python3 manage.py makemigrations (name_app) (1)
+python3 manage,py migrate (name_app)  (2)
+python3 manage.py runserver (default 8000)
